@@ -89,7 +89,7 @@ for key in states.keys():
         nodes[key[0]] = Node(key[0])
 
 for key in states.keys():
-    for node in node.values():
+    for node in nodes.values():
         if key[1] in nodes.keys():
             nodes[key[0]].routes[key[0]] = nodes[key[1]]
 
